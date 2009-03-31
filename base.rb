@@ -18,11 +18,11 @@ rake "gems:install", :sudo => true
 plugin 'resource controller', :git => 'git://github.com/giraffesoft/resource_controller.git'
 
 if yes? "Want newrelic plugin?"
-  load_template '/Users/andrew/Ruby/Templates/newrelic.rb'
+  load_template 'http://github.com/Derander/rails-templates/raw/master/newrelic.rb'
 end
 
 if yes? "Want authentication?"
-  load_template '/Users/andrew/Ruby/Templates/authentication.rb'
+  load_template 'http://github.com/Derander/rails-templates/raw/master/authentication.rb'
 end
 
 if yes? "Want paperclip?"
